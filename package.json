@@ -1,0 +1,19 @@
+{
+  "name": "pi-java-tools",
+  "version": "1.0.0",
+  "description": "Pi extensions and skills for Java Spring Boot development — scaffolding, testing, code review, and automated workflows",
+  "keywords": ["pi-package", "java", "spring-boot", "maven"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prpatel/pi-java-tools"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "pi": {
+    "extensions": ["./extensions"],
+    "skills": ["./skills"]
+  }
+}
