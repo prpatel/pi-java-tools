@@ -60,6 +60,22 @@ The LLM automatically uses the appropriate tools based on your requests:
 - "Start the app" → `java_run`
 - "Check coverage" → `java_test_coverage`
 
+## Example Specs
+
+The package includes 3 ready-to-use spec files in `example-specs/`:
+
+| Spec | Complexity | What it builds |
+|------|-----------|----------------|
+| [user-api.md](example-specs/user-api.md) | ⭐ Basic | User CRUD API with validation, H2, error handling |
+| [todo-api.md](example-specs/todo-api.md) | ⭐⭐ Intermediate | Todo API with JWT auth, roles, PostgreSQL |
+| [todo.md](example-specs/todo.md) | ⭐⭐⭐ Advanced | Full-stack Todo app with Thymeleaf UI + REST API |
+
+After installing, run one with:
+
+```bash
+/java-workflow ~/.pi/agent/git/github.com/prpatel/pi-java-tools/example-specs/user-api.md
+```
+
 ## License
 
 MIT
