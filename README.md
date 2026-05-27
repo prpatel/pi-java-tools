@@ -67,6 +67,8 @@ Check out the pi docs https://pi.dev/docs/latest, they are quite good... or just
 
 If you have questions or suggestions, msg me on LinkedIn: https://www.linkedin.com/in/prpatel/
 
+[![GitHub](https://img.shields.io/badge/GitHub-prpatel/pi-java-tools-181717?style=flat-square&logo=github)](https://github.com/prpatel/pi-java-tools)
+
 ## What's included
 
 ### Extensions (3)
@@ -97,6 +99,8 @@ If you have questions or suggestions, msg me on LinkedIn: https://www.linkedin.c
 ```bash
 pi install git:github.com/prpatel/pi-java-tools@v1.0.0
 ```
+
+View the release on [GitHub](https://github.com/prpatel/pi-java-tools/releases/tag/v1.0.0).
 
 ### Try without installing
 
@@ -131,9 +135,9 @@ The package includes 3 ready-to-use spec files in `example-specs/`:
 
 | Spec | Complexity | What it builds |
 |------|-----------|----------------|
-| [user-api.md](example-specs/user-api.md) | ⭐ Basic | User CRUD API with validation, H2, error handling |
-| [todo-api.md](example-specs/todo-api.md) | ⭐⭐ Intermediate | Todo API with JWT auth, roles, PostgreSQL |
-| [todo.md](example-specs/todo.md) | ⭐⭐⭐ Advanced | Full-stack Todo app with Thymeleaf UI + REST API |
+| [user-api.md](https://github.com/prpatel/pi-java-tools/blob/main/example-specs/user-api.md) | ⭐ Basic | User CRUD API with validation, H2, error handling |
+| [todo-api.md](https://github.com/prpatel/pi-java-tools/blob/main/example-specs/todo-api.md) | ⭐⭐ Intermediate | Todo API with JWT auth, roles, PostgreSQL |
+| [todo.md](https://github.com/prpatel/pi-java-tools/blob/main/example-specs/todo.md) | ⭐⭐⭐ Advanced | Full-stack Todo app with Thymeleaf UI + REST API |
 
 After installing, run one with:
 
@@ -141,6 +145,7 @@ After installing, run one with:
 /java-workflow /path/to/pi-java-tools/example-specs/user-api.md
 ```
 
+(See the spec on [GitHub](https://github.com/prpatel/pi-java-tools/blob/main/example-specs/user-api.md).)
 
 ## License
 
