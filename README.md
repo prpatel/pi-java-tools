@@ -27,17 +27,24 @@ Here's how to get started and build a full Java application in **a few mins**
   * You can get the config by going to https://pi.dev/models and selecting/searching for provider & model (note that this lists the same model multiple times by provider!)
   * You can also ask pi itself to help configure this! But be warned, it may overwrite your existing ~/.pi/agent/models.json file if you're not careful!
   * use /model within pi select a model
-* Let's build an app! Open a new terminal window then type this in:
-  * mkdir tmp; cd tmp
-  * git clone https://github.com/prpatel/pi-java-tools
-  * mkdir spring-boot-todo
-  * cd spring-boot-todo
-  * pi -e ../pi-java-tools
-  * /java-workflow  ../pi-java-tools/example-specs/todo.md
+* Let's build an app! Open a new terminal window and run:
 
- The pi agent will now start building out todo application!
+```bash
+mkdir tmp && cd tmp
+git clone https://github.com/prpatel/pi-java-tools
+mkdir spring-boot-todo && cd spring-boot-todo
+pi -e ../pi-java-tools
+```
 
- the "pi -e" loads the extension only for this specific run of pi. You can install it as a "permanent" extension, see instructions below.
+Then in the pi session, run:
+
+```
+/java-workflow ../pi-java-tools/example-specs/todo.md
+```
+
+The pi agent will now start building out the todo application!
+
+The `pi -e` flag loads the extension only for this specific run of pi. You can install it as a permanent extension using the instructions below.
 
 ## Next steps
 
