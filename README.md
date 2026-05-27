@@ -1,6 +1,71 @@
-# pi-java-tools
+# Java tools and extensions for pi
 
-Pi extensions and skills for Java Spring Boot development.
+This repo contains pi extensions and skills for Java Spring Boot development. It uses pi (pi.dev) which is a a minimal agentic coding tool and terminal coding harness. Why use pi? It is minimal, has a very small footprint and initial context that it sends to an LLM, hence is fast and lightweight.
+
+This project provides a number of tools to build a Java application - and is a **mini software factory** that will build a complete application from a spec!
+
+This project is currently **BETA** so use with care! It has a minimal permissions gate (the default one built into pi itself). 
+
+## AI Models
+
+I've used this to test the capability of **local** and **cloud** models including:
+* Qwen3.6 27B and 35B-A3 (running local!)
+* Gemini 3.1 Flash and Pro
+* Sonnet 4.6
+  
+## Getting started
+
+The extension **java-workflow** will take a spec.md file and:
+
+analyze → architect → develop → test → review → fix → verify
+
+Here's how to get started and build a full Java application in **a few mins**
+
+* Go to https://pi.dev/ and install pi using the instructions at the top.
+* Select a model to use:
+  * You'll get asked on installation to setup an env variable for major providers
+  * You can get the config by going to https://pi.dev/models and selecting/searching for provider & model (note that this lists the same model multiple times by provider!)
+  * You can also ask pi itself to help configure this! But be warned, it may overwrite your existing ~/.pi/agent/models.json file if you're not careful!
+  * use /model within pi select a model
+* Let's build an app! Open a new terminal window then type this in:
+  * mkdir tmp; cd tmp
+  * git clone https://github.com/prpatel/pi-java-tools
+  * mkdir spring-boot-todo
+  * cd spring-boot-todo
+  * pi -e ../pi-java-tools
+  * /java-workflow  ../pi-java-tools/example-specs/todo.md
+
+ The pi agent will now start building out todo application!
+
+ the "pi -e" loads the extension only for this specific run of pi. You can install it as a "permanent" extension, see instructions below.
+
+## Next steps
+
+If you're a java developer, you already know how to start this Spring Boot application, but you can just tell pi to do it! Just type this in and hit enter:
+
+```
+run the application and open a browser so I can test it
+```
+
+You can have a look at the spec file while it's running to see the requirements, structure, standards (like use Java 21 records) etc. Here's the tech stack I put in the spec:
+
+- **Backend Framework**: Spring Boot 3.x
+- **Language**: Java 21
+- **Build Tool**: Maven
+- **Database**: H2 (In-memory) for simplicity
+- **Frontend UI**: Thymeleaf (Server-Side Rendering)
+- **Frontend Assets**: Standard HTML5, CSS3, Vanilla JavaScript (Fetch API)
+- **Testing**: JUnit 5, MockMvc, Mockito
+
+Depending on the model you used, the application may need some bug fixes. You can tell pi to fix them:
+
+```
+When I click the checkbox nothing happens. Fix it.
+```
+
+Check out the pi docs https://pi.dev/docs/latest, they are quite good... or just ask pi to help you!
+
+If you have questions or suggestions, msg me on LinkedIn: https://www.linkedin.com/in/prpatel/
 
 ## What's included
 
@@ -73,8 +138,9 @@ The package includes 3 ready-to-use spec files in `example-specs/`:
 After installing, run one with:
 
 ```bash
-/java-workflow ~/.pi/agent/git/github.com/prpatel/pi-java-tools/example-specs/user-api.md
+/java-workflow /path/to/pi-java-tools/example-specs/user-api.md
 ```
+
 
 ## License
 
