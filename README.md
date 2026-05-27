@@ -74,8 +74,6 @@ Check out the pi docs https://pi.dev/docs/latest, they are quite good... or just
 
 If you have questions or suggestions, msg me on LinkedIn: https://www.linkedin.com/in/prpatel/
 
-[![GitHub](https://img.shields.io/badge/GitHub-prpatel/pi-java-tools-181717?style=flat-square&logo=github)](https://github.com/prpatel/pi-java-tools)
-
 ## What's included
 
 ### Extensions (3)
